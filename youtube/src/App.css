@@ -210,13 +210,28 @@ main{
     flex: 0 0 auto;
 }
 
-.thumbnail-video-box img{
+.thumbnail-video-box img.thumbnail-image{
     width: 420px;
+    height: 250px;
     border-radius: 12px;
 }
 
-.hidden{
+.thumbnail-video-box video {
+    width: 420px;
+    height: 250px;
+    display: none;;
+}
+
+.thumbnail-video-box:hover img.thumbnail-image {
     display: none;
+}
+
+.thumbnail-video-box:hover video {
+    display: block;
+}
+
+.thumbnail-video-box img, .thumbnail-video-box video{
+    transition: opacity 0.3s ease;
 }
 
 .chanel-infos{
