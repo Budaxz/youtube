@@ -99,7 +99,7 @@ export function VideoContent() {
                         }
                         <div className="video-duration">
                             <span>{formatTime(currentTime)}</span>
-                            <span></span>
+                            <span>/</span>
                             <span>{formatTime(duration)}</span>
                         </div>
                     </div>
