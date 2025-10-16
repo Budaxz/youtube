@@ -263,6 +263,7 @@ main{
     width: 100%;
     max-height: 600px;
     display: block;
+    background-color: #a5a5a5;
 }
 
 .video-controls{
@@ -349,4 +350,225 @@ main{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+
+/* CONTENT INFO */
+
+.content-info-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 1000px;
+}
+
+.content-channel-video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-channel-info button{
+    height: 34px;
+    padding: 0px 12px;
+    border-radius: 24px;
+    border: none;
+    background-color: rgba(0, 0, 0, .05);
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 16px;
+}
+
+.content-channel-info button.member {
+    background-color: #111111;
+    color: white;
+}
+
+.content-channel-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.channel-info {
+    margin-left: 16px;
+}
+
+.channel-info-video h2{
+    padding: 12px 0;
+}
+
+.channel-info h5{
+    font-size: 18px;
+}
+
+.channel-info p{
+    font-size: 12px;
+}
+
+.notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification span{
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 50%;
+}
+
+.content-channel-info img{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+.user-image img{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+
+.content-video-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.likes,
+.share,
+.download,
+.download,
+.thanks,
+.more-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .05);
+    padding: 8px 16px;
+    border-radius: 24px;
+    height: 34px;
+}
+
+.qnt-likes, 
+.qnt-unlikes,
+.more-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qnt-likes .material-icons-outlined,
+.qnt-unlikes .material-icons-outlined{
+    font-size: 16px;
+}
+
+.more-actions{
+    padding: 8px;
+}
+
+.qnt-likes{
+    border-right: 1px solid #a3a3a3;
+    padding-right: 12px;
+    width: 85px
+}
+
+.qnt-unlikes{
+    width: 60px
+}
+
+.amount{
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.content-description-video{
+    max-width: 1000px;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.content-description-video span{
+    font-weight: 500;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.content-video-comments{
+    max-width: 1000px;
+    margin-top: 28px;
+}
+
+.infos-comments{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 36px;
+}
+
+.infos-comments .order{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.infos-comments span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.infos-comments .order span.material-icons-outlined{
+    font-size: 28px;
+
+}
+
+.infos-comments .order span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* comments */
+
+.comment{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+#userId{
+    font-weight: 500;
+    margin-right: 4px;
+    color: #000000;
+}
+.comment span{
+    font-size: 14px;
+    color: #666666;
+    font-weight: 400;
+    margin-bottom: 12px 0;
+}
+
+.comment-likes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.comment-likes .material-icons-outlined{
+    color: #000000;
+}
+
+.respond{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.respond span{
+    font-size: 12px;
+    font-weight: 500;
+    color: #000000;
 }
