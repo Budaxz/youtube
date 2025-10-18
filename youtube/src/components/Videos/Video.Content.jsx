@@ -1,6 +1,18 @@
 import { useEffect, useRef, useState } from "react"
+import { useParams } from "react-router-dom";
+import { useVideos } from "../../hooks/useVideos";
 
 export function VideoContent() {
+    const { id } = useParams();
+    const { videos, video, setVideo } = useVideos();
+
+    useEffect(() => {
+        let foundVideo = videos.find(v => v.id  === Number(id))
+       if(foundVideo){
+        setVideo(foundVideo)
+       }
+    })
+
     const [isMuted, setIsMuted] = useState(false);
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
@@ -74,7 +86,7 @@ export function VideoContent() {
             <video  
                 muted={isMuted}
                 ref={VideoRef}
-                src="/videos/taPegandoFogoBicho.mp4" 
+                src={video.url} 
                 type="video/mp4"
             ></video>
             <div className="video-controls">

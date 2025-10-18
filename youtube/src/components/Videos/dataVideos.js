@@ -194,5 +194,135 @@ export const videos = [
         thumbnail: "/images/fimatheClub.png",
         shorts: false
     },
+    {
+        id: 16,
+        title: "COMO FAZER R$ 10.000,00 POR MÊS COM MESA PROPRIETÁRIA | FOREX | FIMATHE",
+        url: "/videos/taPegandoFogoBicho.mp4",
+        channel: {
+            nameChannel: "Marcelo Ferreira - Fimathe",
+            thumbnail: "/images/channels_profile.jpg", // referencia a minha pasta Public
+            subscriptions: 1300
+        },
+        views: 230,
+        thumbnail: "/images/fimatheClub.png",
+        shorts: true
+    },
+    {
+        id: 17,
+        title: "COMO FAZER R$ 10.000,00 POR MÊS COM MESA PROPRIETÁRIA | FOREX | FIMATHE",
+        url: "/videos/taPegandoFogoBicho.mp4",
+        channel: {
+            nameChannel: "Marcelo Ferreira - Fimathe",
+            thumbnail: "/images/channels_profile.jpg", // referencia a minha pasta Public
+            subscriptions: 1300
+        },
+        views: 230,
+        thumbnail: "/images/fimatheClub.png",
+        shorts: true
+    },
+    {
+        id: 18,
+        title: "COMO FAZER R$ 10.000,00 POR MÊS COM MESA PROPRIETÁRIA | FOREX | FIMATHE",
+        url: "/videos/taPegandoFogoBicho.mp4",
+        channel: {
+            nameChannel: "Marcelo Ferreira - Fimathe",
+            thumbnail: "/images/channels_profile.jpg", // referencia a minha pasta Public
+            subscriptions: 1300
+        },
+        views: 230,
+        thumbnail: "/images/fimatheClub.png",
+        shorts: true
+    },
+    {
+        id: 19,
+        title: "COMO FAZER R$ 10.000,00 POR MÊS COM MESA PROPRIETÁRIA | FOREX | FIMATHE",
+        url: "/videos/taPegandoFogoBicho.mp4",
+        channel: {
+            nameChannel: "Marcelo Ferreira - Fimathe",
+            thumbnail: "/images/channels_profile.jpg", // referencia a minha pasta Public
+            subscriptions: 1300
+        },
+        views: 230,
+        thumbnail: "/images/fimatheClub.png",
+        shorts: true
+    },
+    {
+        id: 20,
+        title: "COMO FAZER R$ 10.000,00 POR MÊS COM MESA PROPRIETÁRIA | FOREX | FIMATHE",
+        url: "/videos/taPegandoFogoBicho.mp4",
+        channel: {
+            nameChannel: "Marcelo Ferreira - Fimathe",
+            thumbnail: "/images/channels_profile.jpg", // referencia a minha pasta Public
+            subscriptions: 1300
+        },
+        views: 230,
+        thumbnail: "/images/fimatheClub.png",
+        shorts: true
+    },
+    {
+        id: 21,
+        title: "COMO FAZER R$ 10.000,00 POR MÊS COM MESA PROPRIETÁRIA | FOREX | FIMATHE",
+        url: "/videos/taPegandoFogoBicho.mp4",
+        channel: {
+            nameChannel: "Marcelo Ferreira - Fimathe",
+            thumbnail: "/images/channels_profile.jpg", // referencia a minha pasta Public
+            subscriptions: 1300
+        },
+        views: 230,
+        thumbnail: "/images/fimatheClub.png",
+        shorts: true
+    },
+    {
+        id: 22,
+        title: "COMO FAZER R$ 10.000,00 POR MÊS COM MESA PROPRIETÁRIA | FOREX | FIMATHE",
+        url: "/videos/taPegandoFogoBicho.mp4",
+        channel: {
+            nameChannel: "Marcelo Ferreira - Fimathe",
+            thumbnail: "/images/channels_profile.jpg", // referencia a minha pasta Public
+            subscriptions: 1300
+        },
+        views: 230,
+        thumbnail: "/images/fimatheClub.png",
+        shorts: true
+    },
+    {
+        id: 23,
+        title: "COMO FAZER R$ 10.000,00 POR MÊS COM MESA PROPRIETÁRIA | FOREX | FIMATHE",
+        url: "/videos/taPegandoFogoBicho.mp4",
+        channel: {
+            nameChannel: "Marcelo Ferreira - Fimathe",
+            thumbnail: "/images/channels_profile.jpg", // referencia a minha pasta Public
+            subscriptions: 1300
+        },
+        views: 230,
+        thumbnail: "/images/fimatheClub.png",
+        shorts: true
+    },
+    {
+        id: 24,
+        title: "COMO FAZER R$ 10.000,00 POR MÊS COM MESA PROPRIETÁRIA | FOREX | FIMATHE",
+        url: "/videos/taPegandoFogoBicho.mp4",
+        channel: {
+            nameChannel: "Marcelo Ferreira - Fimathe",
+            thumbnail: "/images/channels_profile.jpg", // referencia a minha pasta Public
+            subscriptions: 1300
+        },
+        views: 230,
+        thumbnail: "/images/fimatheClub.png",
+        shorts: true
+    },
+    {
+        id: 25,
+        title: "COMO FAZER R$ 10.000,00 POR MÊS COM MESA PROPRIETÁRIA | FOREX | FIMATHE",
+        url: "/videos/taPegandoFogoBicho.mp4",
+        channel: {
+            nameChannel: "Marcelo Ferreira - Fimathe",
+            thumbnail: "/images/channels_profile.jpg", // referencia a minha pasta Public
+            subscriptions: 1300
+        },
+        views: 230,
+        thumbnail: "/images/fimatheClub.png",
+        shorts: true
+    },
     
  ]

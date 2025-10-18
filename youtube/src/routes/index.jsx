@@ -9,7 +9,7 @@ export function RouterApp(){
             <Header></Header> {/* Header é fixa em todas as páginas */}
             <Routes>
                 <Route path='/' element={<HomePage/>}/>
-                <Route path='/video' element={<VideoPage/>}/>
+                <Route path='/video/:id' element={<VideoPage/>}/>
             </Routes>
         </BrowserRouter>
     )
