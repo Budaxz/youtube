@@ -10,7 +10,8 @@ export const videos = [
         }, 
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 2,
@@ -23,7 +24,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 3,
@@ -36,7 +38,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 4,
@@ -49,7 +52,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 5,
@@ -62,7 +66,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 6,
@@ -75,7 +80,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 7,
@@ -88,7 +94,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 8,
@@ -101,7 +108,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 9,
@@ -114,7 +122,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 10,
@@ -127,7 +136,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 11,
@@ -140,7 +150,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 12,
@@ -153,7 +164,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 13,
@@ -166,7 +178,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 14,
@@ -179,7 +192,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 15,
@@ -192,7 +206,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: false
+        shorts: false,
+        musicName: DM - Sotam
     },
     {
         id: 16,

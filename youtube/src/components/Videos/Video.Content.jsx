@@ -4,7 +4,23 @@ import { useVideos } from "../../hooks/useVideos";
 
 export function VideoContent() {
     const { id } = useParams();
-    const { videos, video, setVideo } = useVideos();
+    const { 
+        video,
+        setVideo,
+        videos,
+        isPlaying,
+        currentTime,
+        setCurrentTime,
+        duration,
+        setDuration,
+        handlePlay,
+        handlePause,
+        handleMutad,
+        handleProgressClick,
+        formatTime,
+        isMuted,
+        VideoRef
+     } = useVideos();
 
     useEffect(() => {
         let foundVideo = videos.find(v => v.id  === Number(id))
@@ -13,12 +29,9 @@ export function VideoContent() {
        }
     })
 
-    const [isMuted, setIsMuted] = useState(false);
-    const [isPlaying, setIsPlaying] = useState(false);
+    
     const [progress, setProgress] = useState(0);
-    const [currentTime, setCurrentTime] = useState(0);
-    const [duration, setDuration] = useState(0);
-    const VideoRef = useRef(null);
+    
 
     useEffect(() => {
         const video = VideoRef.current;
@@ -45,41 +58,6 @@ export function VideoContent() {
         }
 
     },[]);
-
-    function formatTime(time) {
-        if (isNaN(time)) return "00:00";
-
-        const minutes = Math.floor(time / 60);
-        const seconds = Math.floor(time % 60);
-        return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`
-    }
-
-    function handlePlay() {
-        const v = VideoRef.current;
-        if(!v) return;
-        v.play();
-        setIsPlaying(true);
-    }
-
-    function handlePause() {
-        const v = VideoRef.current;
-        if(!v) return;
-        v.pause();
-        setIsPlaying(false);
-    }
-
-    function handleMutad() {
-        setIsMuted(!isMuted);
-    }
-
-    function handleProgressClick(e) {
-        const bar = e.target;
-        const rect = bar.getBoundingClientRect();
-        const clickX = e.clickX - rect.left;
-        const width = rect.width;
-        const newTime = (clickX / width) * VideoRef.current.duration;
-        VideoRef.current.currentTime = newTime;
-    }
 
     return (
         <div className="content-video">

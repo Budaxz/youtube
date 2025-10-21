@@ -1,23 +1,17 @@
 import { Link } from "react-router-dom"
+import { useVideos  } from "../../hooks/useVideos"; 
 
 export function Video({video}) { 
     // const { video } = parens; o mesmo que pares.video
-
-    function hadleMouseEnter(event) {
-        event.target.play()
-    }
-    function hadleMouseLeave(event) {
-        event.target.pause()
-        event.target.currentTime = 0 // voltar o video para o inicio
-    }
+    const { handleMouseEnter, handleMouseLeave } = useVideos();
 
     return (
         <Link to={`/video/${video.id}`}>
             <div key={video.id} className="thumbnail-video-box">
                 <img className="thumbnail-image" src={video.thumbnail} alt="thumbnail image" />
                 <video 
-                    onMouseEnter={hadleMouseEnter}
-                    onMouseLeave={hadleMouseLeave}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                     src={video.url} 
                     type="video/mp4"
                 ></video>

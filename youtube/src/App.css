@@ -572,3 +572,34 @@ main{
     font-weight: 500;
     color: #000000;
 }
+
+/* SHORTS */
+
+.shorts{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 12px 0;
+}
+
+.shorts .thumbnail-video-box {
+    max-width: 290px;
+    height: 100%;
+}
+
+.shorts .thumbnail-video-box img{
+    max-width: 290px;
+    height: 440px;
+}
+
+.shorts .thumbnail-video-box video{
+    max-width: 290px;
+    height: 440px;
+}
+
+.shorts .thumbnail-channel img{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}

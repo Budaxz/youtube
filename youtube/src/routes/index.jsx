@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Header } from "../components/Header"
 import { HomePage } from "../pages/HomePage"
 import { VideoPage } from "../pages/VideoPage"
+import { ShortPage } from "../pages/ShortPage"
 
 export function RouterApp(){
     return (
@@ -10,6 +11,7 @@ export function RouterApp(){
             <Routes>
                 <Route path='/' element={<HomePage/>}/>
                 <Route path='/video/:id' element={<VideoPage/>}/>
+                <Route path='/short/:id' element={<ShortPage/>}/>
             </Routes>
         </BrowserRouter>
     )
