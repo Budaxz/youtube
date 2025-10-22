@@ -5,6 +5,7 @@ export const AppContext = createContext()
 
 export function AppProvider({children}) {
     const [video, setVideo] = useState({});
+    const [short, setShort] = useState({});
     const [videos, setVideos] = useState(initialVideos);
     const [isMuted, setIsMuted] = useState(false);
     const [isPlaying, setIsPlaying] = useState(false);
@@ -78,7 +79,9 @@ export function AppProvider({children}) {
                 handleProgressClick,
                 formatTime,
                 isMuted, 
-                setIsMuted
+                setIsMuted,
+                short, 
+                setShort
             }}
         >
             {children}

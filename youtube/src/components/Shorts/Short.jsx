@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useVideos } from "../../hooks/useVideos"
 
 export function Short({short}) {
@@ -7,7 +8,8 @@ export function Short({short}) {
         <>
             {
                 short && (
-                    <div className="thumbnail-video-box">
+                    <Link to={`/short/${short.id}`}>
+                        <div className="thumbnail-video-box">
                         <img className="thumbnail-image" src={short.thumbnail} alt="short image" />
                         <video 
                             src={short.url}
@@ -27,6 +29,7 @@ export function Short({short}) {
                             </div>
                         </div>
                     </div>
+                    </Link>
                 )
             }
         </>

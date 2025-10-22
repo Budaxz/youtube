@@ -10,15 +10,8 @@ export function ShortContent(){
         setShort,
         videos,
         isPlaying,
-        currentTime,
-        setCurrentTime,
-        duration,
-        setDuration,
         handlePlay,
         handlePause,
-        handleMutad,
-        handleProgressClick,
-        formatTime,
         isMuted,
         VideoRef
     } = useVideos();
@@ -55,19 +48,96 @@ export function ShortContent(){
                 Object.keys(short).length !== 0 && (
                     <div className="content-short-box">
                         <div className="content-short-channel">
-                            <div className="channel-info">
+                            <div className="content-channel-info">
                                 <img src={short.channel.thumbnail} alt="image channel" />
                                 <span>@{short.channel.nameChannel}</span>
                                 <button className="subscriber">Inscrever-se</button>
                                 <button className="member">Seja Membro</button>
                             </div>
                             <div className="channel-video">
-                                <h5>{short.tittle}</h5>
+                                <h3>{short.tittle}</h3>
                                 <p>{short.musicName}</p>
                             </div>
                         </div>
-                        <div className="content-short-video"></div>
-                        <div className="content-short-comments"></div>
+                        <div className="content-short-video">
+                            <div className="short-video">
+                                <video 
+                                    onClick={isPlaying ? handlePause : handlePlay}
+                                    src={short.url}
+                                    type="video/mp4"
+                                    muted={isMuted}
+                                    ref={VideoRef}
+                                ></video>
+                                <div className="short-progress">
+                                    <div className="progress">
+                                        <div className="porcent-progress" style={{width: `${progress}`}}></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="short-buttons-controls">
+                                <div className="short-volume">
+                                    {
+                                        isMuted ? (
+                                            <span className="material-icons-outlined">thump_up</span>
+                                        ) : (
+                                            <span className="material-icons-outlined">volume_off</span>
+                                        )
+                                    }
+                                </div>
+                                <div className="short-likes">
+                                    <span className="material-icons-outlined">thumbp_up</span>
+                                    <span>14 mil</span>
+                                </div>
+                                <div className="short-unLikes">
+                                    <span className="material-icons-outlined">thump_down</span>
+                                    <span>1 mil</span>
+                                </div>
+                                <div className="short-comment">
+                                    <span className="material-icons-outlined">comment</span>
+                                    <span>Compartilhar</span>
+                                </div>
+                                <div className="short-share">
+                                    <span className="material-icons-outlined">reply</span>
+                                    <span>Compartilhar</span>
+                                </div>
+                                <div className="short-remixes">
+                                    <span className="material-icons-outlined">restart_alt</span>
+                                    <span>12</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="content-short-comments">
+                            <div className="comment-header">
+                                <div className="comment-title">
+                                    <h3>Comentários</h3>
+                                    <span>20</span>
+                                </div>
+                                <div className="comment-buttons">
+                                    <span className="material-icons-outlined">sort</span>
+                                    <span className="material-icons-outlined">close</span>
+                                </div>
+                            </div>
+                            <div className="content-comments">
+                                <div className="comment">
+                                    <div className="user-image">
+                                        <img src="/images/channels_profile.jpg" alt="user image" />
+                                    </div>
+                                    <div className="user-comment">
+                                        <h5>@userid</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat quas, reprehenderit aspernatur eum consectetur nobis eius magnam molestias vero pariatur, ut libero incidunt dicta porro voluptatibus iusto eligendi tempora!</p>
+                                        <div className="comment-likes">
+                                            <span className="material-icons-outlined">thump_up</span>
+                                            <span>14 mil</span>
+                                            <span className="material-icons-outlined">thump_down</span>
+                                            <span>1</span>
+                                            <div className="respond">
+                                                <span>Responder</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 )
             }
