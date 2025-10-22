@@ -55,7 +55,7 @@ export function ShortContent(){
                                 <button className="member">Seja Membro</button>
                             </div>
                             <div className="channel-video">
-                                <h3>{short.tittle}</h3>
+                                <h3>{short.title}</h3>
                                 <p>{short.musicName}</p>
                             </div>
                         </div>
@@ -85,24 +85,24 @@ export function ShortContent(){
                                     }
                                 </div>
                                 <div className="short-likes">
-                                    <span className="material-icons-outlined">thumbp_up</span>
-                                    <span>14 mil</span>
+                                    <span className="material-icons-outlined">thumb_up</span>
+                                    <span className="short-text">14 mil</span>
                                 </div>
                                 <div className="short-unLikes">
-                                    <span className="material-icons-outlined">thump_down</span>
-                                    <span>1 mil</span>
-                                </div>
+                                    <span className="material-icons-outlined">thumb_down</span>
+                                    <span className="short-text">1 mil</span>
+                                </div>  
                                 <div className="short-comment">
                                     <span className="material-icons-outlined">comment</span>
-                                    <span>Compartilhar</span>
+                                    <span className="short-text">756</span>
                                 </div>
                                 <div className="short-share">
                                     <span className="material-icons-outlined">reply</span>
-                                    <span>Compartilhar</span>
+                                    <span className="short-text">Compartilhar</span>
                                 </div>
                                 <div className="short-remixes">
                                     <span className="material-icons-outlined">restart_alt</span>
-                                    <span>12</span>
+                                    <span className="short-text">126</span>
                                 </div>
                             </div>
                         </div>

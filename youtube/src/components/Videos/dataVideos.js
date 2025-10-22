@@ -259,7 +259,8 @@ export const videos = [
         },
         views: 230,
         thumbnail: "/images/fimatheClub.png",
-        shorts: true
+        shorts: true,
+        musicName: "DM - Sotam"
     },
     {
         id: 20,

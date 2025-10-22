@@ -44,8 +44,8 @@
 
 .content-short-channel .content-channel-info{
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
+    white-space: nowrap;
     align-items: center;
 }
 
@@ -100,3 +100,41 @@
     box-sizing: border-box;
     z-index: 2;
 }
+
+.short-buttons-controls{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.short-buttons-controls .material-icons-outlined{
+    background-color: rgba(0, 0, 0, .05);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.short-volume,
+.short-likes,
+.short-unLikes,
+.short-share,
+.short-comment,
+.short-remixes{
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.short-text{
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
