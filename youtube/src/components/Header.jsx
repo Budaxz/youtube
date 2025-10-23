@@ -1,5 +1,6 @@
 import youtubeLogo from "../assets/logo.jpeg"
 import profileImg from "../assets/AMG-GT63s.jpeg"
+import { Link } from "react-router-dom"
 
 export function Header() {
     return (
@@ -7,7 +8,7 @@ export function Header() {
             <nav className="container">
                 <div className="logo">
                     <span id="menu-icon" className="material-icons-outlined">density_medium</span>
-                    <img src={youtubeLogo} alt="Logo"/>
+                    <Link to={"/"}><img src={youtubeLogo} alt="Logo"/></Link>
                 </div>
                 <div className="search-box">
                     <div className="search-input">

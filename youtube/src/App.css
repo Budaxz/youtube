@@ -176,21 +176,3 @@ main{
 .icons-menu p{
     font-size: 10px;
 }
-
-/* FILTERS */
-
-.filters ul{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;;
-}
-
-.filters ul li{
-    list-style: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    background-color: rgba(0, 0, 0, .05);
-    font-size: 14px;
-    font-weight: 500;
-}

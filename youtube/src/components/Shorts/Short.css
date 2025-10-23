@@ -138,3 +138,51 @@
     font-size: 14px;
 }
 
+/* COMMENTS */
+.content-short-comments{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    min-height: 860px;
+    border: 1px solid #b8b8b8;
+    border-radius: 12px;
+}
+
+.comment-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b8b8b8;
+    padding: 12px 24px;
+}
+
+.comment-title,
+.comment-buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.comment-title span{
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+}
+
+.comment-buttons{
+    font-size: 26px;
+}
+
+.content-short-comment .content-comments{
+    padding: 0 24px 12px;
+}
+
+.content-short-comments .user-comment p{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}   

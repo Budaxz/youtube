@@ -126,9 +126,45 @@ export function ShortContent(){
                                         <h5>@userid</h5>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat quas, reprehenderit aspernatur eum consectetur nobis eius magnam molestias vero pariatur, ut libero incidunt dicta porro voluptatibus iusto eligendi tempora!</p>
                                         <div className="comment-likes">
-                                            <span className="material-icons-outlined">thump_up</span>
+                                            <span className="material-icons-outlined">thumb_up</span>
                                             <span>14 mil</span>
-                                            <span className="material-icons-outlined">thump_down</span>
+                                            <span className="material-icons-outlined">thumb_down</span>
+                                            <span>1</span>
+                                            <div className="respond">
+                                                <span>Responder</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="comment">
+                                    <div className="user-image">
+                                        <img src="/images/channels_profile.jpg" alt="user image" />
+                                    </div>
+                                    <div className="user-comment">
+                                        <h5>@userid</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat quas, reprehenderit aspernatur eum consectetur nobis eius magnam molestias vero pariatur, ut libero incidunt dicta porro voluptatibus iusto eligendi tempora!</p>
+                                        <div className="comment-likes">
+                                            <span className="material-icons-outlined">thumb_up</span>
+                                            <span>14 mil</span>
+                                            <span className="material-icons-outlined">thumb_down</span>
+                                            <span>1</span>
+                                            <div className="respond">
+                                                <span>Responder</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="comment">
+                                    <div className="user-image">
+                                        <img src="/images/channels_profile.jpg" alt="user image" />
+                                    </div>
+                                    <div className="user-comment">
+                                        <h5>@userid</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat quas, reprehenderit aspernatur eum consectetur nobis eius magnam molestias vero pariatur, ut libero incidunt dicta porro voluptatibus iusto eligendi tempora!</p>
+                                        <div className="comment-likes">
+                                            <span className="material-icons-outlined">thumb_up</span>
+                                            <span>14 mil</span>
+                                            <span className="material-icons-outlined">thumb_down</span>
                                             <span>1</span>
                                             <div className="respond">
                                                 <span>Responder</span>
