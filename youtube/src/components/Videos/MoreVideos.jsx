@@ -13,6 +13,7 @@ export function MoreVideos() {
     const shorts = videos.filter(v => v.shorts === true).slice(0, 3);
     const remaingVideos = newVideos.filter(v => v.id != Number(id))
 
+    
     return (
         <div className="more-content">
             <div className="more-shorts">

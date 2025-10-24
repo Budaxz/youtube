@@ -19,7 +19,9 @@ export function VideoContent() {
         handleProgressClick,
         formatTime,
         isMuted,
-        VideoRef
+        VideoRef,
+        setIsPlaying
+
      } = useVideos();
 
     useEffect(() => {
@@ -48,6 +50,8 @@ export function VideoContent() {
         function onloaded() {
             setDuration(video.duration);
         }
+
+        setIsPlaying(true);
 
         video.addEventListener("timeupdate", updateProgress)
         video.addEventListener("loadedmetadata", onloaded)

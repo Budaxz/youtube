@@ -383,3 +383,118 @@
     color: #000000;
 }
 
+.more-content{
+    padding: 0 24px;
+}
+
+.more-shorts{
+    max-width: 420px;
+    display: flex;
+    gap: 12px;
+    padding: 20px 0;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.more-shorts .thumbnail-video-box{
+    display: block;
+    width: 130px;
+}
+
+.more-shorts .thumbnail-video-box img.thumbnail-image{
+    width: 130px;
+    height: 240px;
+    border-radius: 8px;
+}
+
+.more-shorts .thumbnail-video-box video{
+    width: 130px;
+    height: 240px;
+}
+
+.more-shorts .thumbnail-video-box video:hover{
+    display: block;
+}
+
+.more-shorts .thumbnail-channel{
+    display: none;
+}
+
+.more-shorts .thumbnail-text{
+    max-width: 130px;
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+.more-shorts .thumbnail-text h4{
+    color: #111111;
+    font-size: 16px;
+    max-width: 120px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.more-shorts .thumbnail-text p{
+    color: #666666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.more-videos{
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.more-videos .thumbnail-video-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+
+}
+
+.more-videos .thumbnail-video-box img.thumbnail-image{
+    width: 200px;
+    height: 110px;
+    border-radius: 8px;
+}
+
+.more-videos .thumbnail-video-box video{
+    width: 200px;
+    height: 110px;
+}
+
+.more-videos .thumbnail-video-box video:hover{
+    display: block;
+    width: 200px;
+    height: 110px;
+}
+
+.more-videos .thumbnail-channel{
+    display: none;
+}
+
+.more-videos .channel-infos{
+    margin-top: 0;
+}
+
+.more-videos .thumbnail-text{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.more-videos .thumbnail-text p{
+    color: #666666;
+}
