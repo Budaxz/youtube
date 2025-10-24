@@ -6,9 +6,7 @@ import "./Filter.css"
 import { useEffect, useRef, useState } from 'react';
 
 export function Filters() {
-    const containerRef = useRef(null)
-    const [useCarousel, setCarousel] = useState(false)
-
+    const [activeFilter, setActiveFilter] = useState("Todos")
     const filters = [
         "Todos",
         "Jogos",
@@ -35,6 +33,7 @@ export function Filters() {
         margin: 10,
         dots: false,
         responsiveClass: true,
+        autoWidth: true,
         autoplay: false,
         smartSpeed: 800,
         responsive: {
@@ -46,51 +45,23 @@ export function Filters() {
         }
     }
 
-    useEffect(() => {
-        function checkOverflow(){
-            const el = continerRef.current;
-            if (el) {
-                
-                const isOverflowing = el.scrollWidth > el.clientWidth;
-                setCarousel(isOverflowing);
-            }
-        }
-
-        checkOverfloww();
-
-        window.addEventListener('resize', checkOverflow);
-
-
-        console.log("UseCarousel", useCarousel);
-
-        return () => window.addEventListener('resize', checkOverflow);
-    }, [])
-
     return (
         <div className="filters">
-            {
-                useCarousel ? (
-                    <OwlCarousel className="owl-theme" {...options}>
-                        {
-                            filters.map((filter, index) => {
-                                return (
-                                    <div key={index} className="filter">{filter}</div>
-                                )
-                            })
-                        }
-                    </OwlCarousel>
-                ) : (
-                    <div className="filter-row">
-                        {
-                            filters.map((filter, index) => {
-                                return (
-                                    <div key={index} className="filter">{filter}</div>
-                                )
-                            })
-                        }
-                    </div>
-                )
-            }
+            <OwlCarousel>
+                {
+                    filters.map((filter, index) => {
+                        return (
+                            <div
+                                key={index}
+                                className={`filter ${activeFilter === filter ? "active" : ""}`}
+                                onClick={() => setActiveFilter(filter)}
+                            >
+                                {filter}
+                            </div>
+                        )
+                    })
+                }
+            </OwlCarousel>
         </div>
     )
 }

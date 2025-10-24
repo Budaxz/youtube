@@ -17,6 +17,7 @@ export function ShortContent(){
     } = useVideos();
 
     const [progress, setProgress] = useState(0);
+    const [showComments, setShowComments] = useState(false);
 
      useEffect(() => {
         const foundShort = videos.find(v => v.id === Number(id));
@@ -47,7 +48,7 @@ export function ShortContent(){
             {
                 Object.keys(short).length !== 0 && (
                     <div className="content-short-box">
-                        <div className="content-short-channel">
+                        <div className={`content-short-channel filter ${ showComments ? "slide-out-left" : "slide-in-right"}`}>
                             <div className="content-channel-info">
                                 <img src={short.channel.thumbnail} alt="image channel" />
                                 <span>@{short.channel.nameChannel}</span>
@@ -92,7 +93,7 @@ export function ShortContent(){
                                     <span className="material-icons-outlined">thumb_down</span>
                                     <span className="short-text">1 mil</span>
                                 </div>  
-                                <div className="short-comment">
+                                <div className="short-comment" onClick={() => setShowComments(true)}>
                                     <span className="material-icons-outlined">comment</span>
                                     <span className="short-text">756</span>
                                 </div>
@@ -106,7 +107,7 @@ export function ShortContent(){
                                 </div>
                             </div>
                         </div>
-                        <div className="content-short-comments">
+                        <div className={`content-short-comments ${showComments ? "slide-in-left" : "slide-out-right"}`}>
                             <div className="comment-header">
                                 <div className="comment-title">
                                     <h3>Comentários</h3>
@@ -114,7 +115,7 @@ export function ShortContent(){
                                 </div>
                                 <div className="comment-buttons">
                                     <span className="material-icons-outlined">sort</span>
-                                    <span className="material-icons-outlined">close</span>
+                                    <span className="material-icons-outlined" onClick={() => setShowComments(false)}>close</span>
                                 </div>
                             </div>
                             <div className="content-comments">

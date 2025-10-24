@@ -14,8 +14,30 @@
     font-size: 14px;
     font-weight: 500;
     white-space: nowrap;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    color: #111111;
 }
 
-.owl-item{
-    max-width: 100%!important;
+.owl-carousel .owl-item{
+    width: auto !important;
+    float: auto !important;
+    display: inline-flex !important;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.filter.active{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.filter:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.filter.active:hover{
+    background-color: #000000;
+    background-color: #cccccc;
 }

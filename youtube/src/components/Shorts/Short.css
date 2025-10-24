@@ -71,7 +71,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 .content-short-video video{
@@ -140,7 +140,7 @@
 
 /* COMMENTS */
 .content-short-comments{
-    display: block;
+    display: none;
     width: 100%;
     max-width: 500px;
     min-height: 860px;
@@ -185,4 +185,67 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-}   
+}
+
+.slide-in-left{
+    animation: slideInLeft 0.8s forwards;
+    display: block;  
+}
+
+.slide-out-left{
+    animation: slideOutLeft 0.8s forwards; 
+    display: none;
+}
+
+.slide-in-right{
+    animation: slideInRight 0.8s forwards; 
+    display: block;  
+}
+
+.slide-out-rigth{
+    animation: slideOutRight 0.8s forwards; 
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft{
+    from{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutRight{
+    from{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}

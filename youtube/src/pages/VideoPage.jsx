@@ -1,3 +1,4 @@
+import { MoreVideos } from "../components/Videos/MoreVideos"
 import { VideoContent } from "../components/Videos/Video.Content"
 import { VideoInfo } from "../components/Videos/video.info"
 
@@ -10,6 +11,7 @@ export function VideoPage() {
                 <VideoContent/>
                 <VideoInfo/>
             </div>
+            <MoreVideos/>
         </main>
     )
 }
