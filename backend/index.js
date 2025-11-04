@@ -9,8 +9,8 @@ app.use(express.json());
 
 const connection = mysql.createConnection({
     host: "Localhost",
-    user: "root",
-    password: "Q4ts97nTwXz9",
+    user: "**",
+    password: "**",
     database: "youtube_db"
 })
 
